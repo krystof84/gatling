@@ -1,8 +1,9 @@
 // Colors
-$link-color: #181818;
-$link-dropdown-color: #7e8597;
-$separator-color: #e9e6e6;
-$link-color-active: #ff4747; 
+$nav-link-color: #181818;
+$nav-link-color-mobile: #b8b8b8;
+$nav-link-dropdown-color: #7e8597;
+$nav-separator-color: #e9e6e6;
+$nav-link-color-active: #ff4747; 
 
 
 .custom-logo-link img { 
@@ -13,7 +14,7 @@ $link-color-active: #ff4747;
     top: 98%;
     border-radius: 0px;
     padding: 20px;
-    border-top: 2px solid $link-color-active;
+    border-top: 2px solid $nav-link-color-active;
 }
 
 .dropdown-item {
@@ -21,13 +22,13 @@ $link-color-active: #ff4747;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    color: $link-dropdown-color;
+    color: $nav-link-dropdown-color;
     padding: 14px 0;
-    border-bottom: 1px solid $separator-color;
+    border-bottom: 1px solid $nav-separator-color;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    color: $link-dropdown-color;
+    color: $nav-link-dropdown-color;
     text-decoration: none;
     background-color: transparent;
 }
@@ -41,18 +42,18 @@ $link-color-active: #ff4747;
             font-weight: 500;
             font-size: 15px;
             line-height: 30px;
-            color: $link-color;
+            color: $nav-link-color;
             transition: .5s all;
             padding: 33px 15px;
 
             &:hover, &:focus {
-                color: $link-color-active;
+                color: $nav-link-color-active;
             }
         }
 
         .active > .nav-link,
         .show > .nav-link {
-            color: $link-color-active;
+            color: $nav-link-color-active;
         }
     }
 }
@@ -71,7 +72,7 @@ $link-color-active: #ff4747;
 
             .nav-link {
                 padding: 10px 20px;
-                color: #b8b8b8;
+                color: $nav-link-color-mobile;
                 font-weight: 600;
                 font-size: 16px;
             }
@@ -91,7 +92,7 @@ $link-color-active: #ff4747;
     }
     .dropdown-item {
         border-bottom: 1px solid #797979;
-        color: #b8b8b8;
+        color: $nav-link-color-mobile;
         font-weight: 600;
     }
 
