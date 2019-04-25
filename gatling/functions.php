@@ -25,6 +25,12 @@ function theme_enqueue_styles() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    // Google fonts
+    wp_enqueue_style('thme-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Barlow:400,500,600', ['child-understrap-styles'], '1.0');
+
+    // Main js file
+    wp_enqueue_script('gat-main', get_stylesheet_directory_uri() . '/js/main.js', ['jquery'], '1.0');
 }
 
 function add_child_theme_textdomain() {
