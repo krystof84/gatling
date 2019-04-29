@@ -1,4 +1,7 @@
 <?php
+
+include_once 'incl/customizer.php';
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }

@@ -1,0 +1,94 @@
+// Colors
+$footer-background-color: #1b1b1b;
+$footer-link-color: #fff;
+
+.wrapper-footer-full {
+    background: $footer-background-color !important;
+    padding: 75px 0 !important;
+
+    .widget-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        color: $footer-link-color;
+        margin-bottom: 25px;
+    }
+
+    .textwidget {
+        p, address {
+            color: $footer-link-color;
+        }
+    }
+
+    .widget_nav_menu {
+        ul {
+            padding-left: 5px;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+
+                a {
+                    color: $footer-link-color;
+                    font-size: 18px;
+                    position: relative;
+                    padding-left: 22px;
+                    transition: all .3s;
+    
+                    &:hover {
+                        text-decoration: none;
+                        color: $primary;
+                    }
+    
+                    &::before {
+                        position: absolute;
+                        content: "\f101";
+                        left: 0px;
+                        top: 3px;
+                        line-height: 1em;
+                        font-family: 'FontAwesome';
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper-footer {
+    background: $footer-background-color;
+    
+    .container {
+        border-top: 1px solid #2d2d2d;
+        padding: 20px 0;
+    }
+
+    .site-info {
+        color: $footer-link-color;
+    }
+}
+
+@media(max-width: 767px) {
+    .wrapper-footer-full {
+        .container > .row > div {
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 50px;
+            }
+        }
+
+        .widget-title {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .wrapper-footer .container {
+        padding: 20px 15px;
+    }
+}
