@@ -11643,6 +11643,21 @@ body {
   line-height: 1.8em;
   color: #212333; }
 
+.btn,
+.wpcf7 input[type=submit] {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  border-radius: 0;
+  padding: 16px 55px;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .btn--transparent {
+    color: #f13729;
+    border: 2px solid #f13729; }
+    .btn--transparent:hover {
+      background: #f13729;
+      color: #fff; }
+
 .wrapper-footer-full {
   background: #1b1b1b !important;
   padding: 75px 0 !important; }
@@ -11770,6 +11785,12 @@ body {
     color: #b8b8b8;
     font-weight: 600; } }
 
+@media (max-width: 576px) {
+  .navbar {
+    padding: 30px 15px; }
+  .navbar-brand {
+    margin-right: 0; } }
+
 @media (max-width: 550px) {
   .navbar > .container {
     -webkit-box-orient: vertical;
@@ -11779,10 +11800,10 @@ body {
   .custom-logo-link img {
     margin-right: 0; }
   .navbar-toggler {
-    margin: 10px 10px 0 auto; }
+    margin: 10px 0 0 auto; }
   .navbar-collapse {
     margin: 10px auto 0 auto;
-    width: calc(100% - 20px); } }
+    width: 100%; } }
 
 .parallax-container {
   position: relative; }
@@ -11809,5 +11830,90 @@ body {
 
 .wrapper {
   padding: 0; }
+
+.carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.carousel-caption {
+  position: static;
+  padding: 200px 0;
+  height: 760px; }
+  .carousel-caption__uptitle {
+    color: #f13729;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .carousel-caption__title {
+    font-family: 'Popins', sans-serif;
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 50px; }
+    .carousel-caption__title::before {
+      position: absolute;
+      content: '';
+      background: #f13729;
+      width: 1px;
+      height: 50px;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .carousel-caption__desc {
+    font-size: 18px;
+    font-weight: 400; }
+
+.carousel-control-prev .fa,
+.carousel-control-next .fa {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  position: relative;
+  font-size: 24px; }
+  .carousel-control-prev .fa::before,
+  .carousel-control-next .fa::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    padding: 100px 0;
+    height: 850px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .carousel-caption .btn,
+    .carousel-caption .wpcf7 input[type=submit], .wpcf7 .carousel-caption input[type=submit] {
+      width: 250px;
+      margin: 20px auto 0 auto; } }
+
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; }
+  .carousel-caption {
+    height: 660px; }
+    .carousel-caption__title {
+      font-size: 45px;
+      line-height: 60px;
+      padding-bottom: 0; }
+      .carousel-caption__title::before {
+        display: none; } }
 
 /*# sourceMappingURL=child-theme.css.map */
