@@ -65,6 +65,15 @@
     }
 }
 
+@media(max-width: 991px) and (min-width: 768px) {
+    .carousel-caption {
+        padding: 150px 0 200px 0;
+    }
+    .carousel-caption__title {
+        margin-bottom: 0px;
+    }
+}
+
 @media(max-width: 767px) {
     .carousel-caption {
         padding: 100px 0;

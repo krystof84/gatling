@@ -71,63 +71,96 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     <!-- End Slider -->
 
-	<!-- <div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1"> -->
 
-		<!-- <div class="row"> -->
+    <main class="site-main" id="main">
 
-			<main class="site-main" id="main">
+        <div class="container-2col">
+            <section class="section-2col" style="background: #fff;">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn-label">Get to know</a>
+                        <h1 class="section-heading">About Our Company</h1>
+                    </div>
 
-                <section class="about-us">
-                    <div class="container">
-                        <div class="section-title">
-                            <a href="#">Get to know</a>
-                            <h1 class="section-heading">About Our Company</h1>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 section-2col__image">
+                            <img src="<?php echo get_stylesheet_directory_uri() . '/img/photo-1.jpg'?>" alt="Some picture description">
                         </div>
-
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/img/slider/1.jpg'?>" alt="">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sit at cupiditate non? Facere fuga aliquid, numquam iusto recusandae omnis laboriosam dolorem, velit nesciunt et quisquam, error similique perspiciatis doloremque dolores! Ipsum laborum officia quis dignissimos. Repudiandae, nobis, sit atque voluptates quisquam, aliquam dolor voluptas tempore eos sunt alias autem.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut unde. Vero voluptates neque asperiores atque cupiditate, aperiam quisquam non quaerat deleniti sapiente eligendi quod labore pariatur consequatur adipisci reiciendis expedita. Consectetur quibusdam corrupti blanditiis?</p>
-                            </div>
+                        <div class="col-12 col-lg-6 section-2col__text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sit at cupiditate non? Facere fuga aliquid, numquam iusto recusandae omnis laboriosam dolorem, velit nesciunt et quisquam, error similique perspiciatis doloremque dolores! Ipsum laborum officia quis dignissimos. Repudiandae, nobis, sit atque voluptates quisquam, aliquam dolor voluptas tempore eos sunt alias autem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut unde. Vero voluptates neque asperiores atque cupiditate, aperiam quisquam non quaerat deleniti sapiente eligendi quod labore pariatur consequatur adipisci reiciendis expedita. Consectetur quibusdam corrupti blanditiis?</p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section class="services parallax-container">
-                    <div class="parallax parallax--1 js-parallax-bg"
-                         style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/img/paralax-bg-1.jpg' ?>);" >
-                        <div class="container">
-                            <div class="section-title">
-                                <a href="#">Get to know</a>
-                                <h1 class="section-heading">Services</h1>
-                            </div>
+            <section class="section-2col" style="background: #f3f1f1;">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn-label">Get to know</a>
+                        <h2 class="section-heading">About Our Company</h2>
+                    </div>
 
-                            <div class="row">
-                                <div class="services-block col-md-4">
-                                    <div class="inner-box">
-                                        <div class="services-block__icon">
-                                            <img src="" alt="">
-                                        </div>
-                                        <p class="services-block__title">Finance & Insurance Markets</p>
-                                        <p class="services-block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi culpa alias placeat nesciunt aspernatur, dolores et deleniti praesentium eligendi iure accusamus dignissimos officia vero id dolorum magni? Hic, eius!</p>
-                                        <a href="#" class="services-block__link">Read more</a>
-                                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 section-2col__image">
+                            <img src="<?php echo get_stylesheet_directory_uri() . '/img/photo-1.jpg'?>" alt="Some picture description">
+                        </div>
+                        <div class="col-12 col-lg-6 section-2col__text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sit at cupiditate non? Facere fuga aliquid, numquam iusto recusandae omnis laboriosam dolorem, velit nesciunt et quisquam, error similique perspiciatis doloremque dolores! Ipsum laborum officia quis dignissimos. Repudiandae, nobis, sit atque voluptates quisquam, aliquam dolor voluptas tempore eos sunt alias autem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut unde. Vero voluptates neque asperiores atque cupiditate, aperiam quisquam non quaerat deleniti sapiente eligendi quod labore pariatur consequatur adipisci reiciendis expedita. Consectetur quibusdam corrupti blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-2col" style="background: #fff;">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn-label">Get to know</a>
+                        <h3 class="section-heading">About Our Company</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6 section-2col__image">
+                            <img src="<?php echo get_stylesheet_directory_uri() . '/img/photo-1.jpg'?>" alt="Some picture description">
+                        </div>
+                        <div class="col-12 col-lg-6 section-2col__text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sit at cupiditate non? Facere fuga aliquid, numquam iusto recusandae omnis laboriosam dolorem, velit nesciunt et quisquam, error similique perspiciatis doloremque dolores! Ipsum laborum officia quis dignissimos. Repudiandae, nobis, sit atque voluptates quisquam, aliquam dolor voluptas tempore eos sunt alias autem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut unde. Vero voluptates neque asperiores atque cupiditate, aperiam quisquam non quaerat deleniti sapiente eligendi quod labore pariatur consequatur adipisci reiciendis expedita. Consectetur quibusdam corrupti blanditiis?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Parallax -->
+        <section class="services parallax-container">
+            <div class="parallax parallax--1 js-parallax-bg"
+                    style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/img/paralax-bg-1.jpg' ?>);" >
+                <div class="container">
+                    <div class="section-title">
+                        <a href="#">Get to know</a>
+                        <h1 class="section-heading">Services</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="services-block col-md-4">
+                            <div class="inner-box">
+                                <div class="services-block__icon">
+                                    <img src="" alt="">
                                 </div>
+                                <p class="services-block__title">Finance & Insurance Markets</p>
+                                <p class="services-block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi culpa alias placeat nesciunt aspernatur, dolores et deleniti praesentium eligendi iure accusamus dignissimos officia vero id dolorum magni? Hic, eius!</p>
+                                <a href="#" class="services-block__link">Read more</a>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
 
-			</main>
+    </main>
 
-
-		<!-- </div> -->
-
-	<!-- </div> -->
-    <!-- #content -->
 
 </div><!-- #page-wrapper -->
 

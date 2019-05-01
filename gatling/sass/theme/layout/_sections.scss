@@ -1,0 +1,33 @@
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    color: $header-color;
+    margin-bottom: 20px;
+}
+
+.section-2col {
+    padding: 50px 0;
+
+    &__image {
+        margin-top: 15px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container-2col {
+        > section:nth-child(odd) {
+            .row {
+                flex-flow: row-reverse;
+            }
+        }
+    }
+}
+@media(max-width: 991px) {
+    .section-2col__image {
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
